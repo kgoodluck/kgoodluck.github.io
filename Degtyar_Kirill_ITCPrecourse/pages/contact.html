@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <!-- Adding favicon -->
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <!-- Adding fonts here -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Adding my CSS styles -->
+    <link href="../css/style.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <nav>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <section class="form_section">
+        <form id="contact" action="https://formspree.io/f/xdojdnjr" method="POST">
+        <fieldset>
+            <legend>Fill the form</legend>
+                <label for="first_name">First name<abbr title="This field is mandatory">*</abbr>:
+                    <input type="text" id="first_name" name="first_name" required onkeyup="enableSubmit()">
+                </label>
+                <label for="last_name">Last name:
+                    <input type="text" id="last_name" name="last_name">
+                </label>
+                <label for="email">Your email<abbr title="This field is mandatory">*</abbr>:
+                    <input type="email" id="email" name="email" required onkeyup="enableSubmit()">
+                </label>
+                <label for="comment">Comment<abbr title="This field is mandatory">*</abbr>:
+                    <textarea id="comment" name="comment" required onkeyup="enableSubmit()"></textarea>
+                </label>
+                <p>What do you think this website was created with?</p>
+                <label class="button_container">HTML
+                    <input type="radio" name="ufotype" value="oneItem" checked>
+                    <span class="radio_button"></span>
+                </label>
+                <label class="button_container">HTML, CSS and JavaScript
+                    <input type="radio" name="ufotype" value="threeItems">
+                    <span class="radio_button"></span>
+                </label>
+                <label class="button_container">HTML, CSS, JavaScript, Python, Java and C++
+                    <input type="radio" name="ufotype" value="sixItems">
+                    <span class="radio_button"></span>
+                </label>
+                <label class="button_container">Pure miracle
+                    <input type="radio" name="ufotype" value="miracle">
+                    <span class="radio_button"></span>
+                </label>
+                <button id="submit" type="submit" value="Submit">submit</button>
+                <p class="note">note: *fields are required</p>
+        </fieldset>
+        </form>
+      </section>
+      <footer>
+        <div>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="./pages/about.html">About</a></li>
+            <li><a href="./pages/contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="used_skills"></div>
+        <div class="copyright">&#169; Israel Tech Challenge</div>
+      </footer>
+    <!-- <div>Contact Page</div> -->
+    <script src="../js/formValidation.js"></script>
+    <script src="../js/footer.js"></script>
+    <script src="../js/additional.js"></script>
+</body>
+</html>
